@@ -8,7 +8,7 @@
 }
 
 body {
-    height: 100svh;
+    min-height: 100svh;
     display: grid;
     grid-template-columns: auto 1fr;
     grid-template-rows: auto 1fr;
@@ -102,10 +102,6 @@ input[type="search"] {
     border-radius: 32px;
 }
 
-h2 {
-    font-size: 1rem;
-}
-
 .welcome-msg {
     justify-self: start;
     display: grid;
@@ -119,6 +115,7 @@ h2 {
     justify-self: center;
 }
 
+.profile,
 .welcome-msg p {
     font-weight: 600;
 }
@@ -139,8 +136,36 @@ h2 {
     border-radius: 32px;
 }
 
-/* Sidebar */
+/* Cards */
 
 main {
+    padding: 1rem;
     background-color: rgb(230, 230, 230);
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+}
+
+.projects {
+    flex: 2.5;
+    min-width: 500px;
+    height: 1000px;
+    background-color: green;
+}
+
+.info-container {
+    flex: 1;
+    min-width: 150px;
+    background-color: yellow;
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+    gap: 1rem;
+}
+
+.announcements {
+    background-color: blue;
+}
+
+.trending {
+    background-color: red;
 }
