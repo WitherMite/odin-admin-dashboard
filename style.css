@@ -139,7 +139,7 @@ input[type="search"] {
 /* Cards */
 
 main {
-    padding: 1rem;
+    padding: 1.5rem;
     background-color: rgb(230, 230, 230);
     display: flex;
     flex-wrap: wrap;
@@ -147,25 +147,31 @@ main {
 }
 
 .projects {
-    flex: 2.5;
+    flex: auto;
     min-width: 500px;
-    height: 1000px;
-    background-color: green;
 }
 
 .info-container {
-    flex: 1;
-    min-width: 150px;
-    background-color: yellow;
+    flex: 0;
+    min-width: 200px;
     display: grid;
-    grid-template-rows: 1fr 1fr;
+    grid-template-rows: auto 1fr;
     gap: 1rem;
 }
 
-.announcements {
-    background-color: blue;
+h2 {
+    margin-bottom: .75rem;
+    font-size: 1.25rem;
 }
 
-.trending {
-    background-color: red;
+.project-container{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+    gap: 1rem;
+}
+
+.card-container,
+.info-card {
+    background-color: #ffffff;
+    min-height: 200px;
 }
