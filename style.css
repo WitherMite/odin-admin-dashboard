@@ -182,6 +182,30 @@ h2 {
     background-color: #ffffff;
 }
 
+.project-card {
+    position: relative;
+    height: 225px;
+    width: 450px;
+    border-left: 10px solid rgb(255, 196, 0);
+}
+
+.project-card p,
+.announcement p,
+.trending-profile p {
+    color: #424242;
+}
+
+.project-options {
+    position: absolute;
+    bottom: 2rem;
+    right: 2rem;
+}
+
+.project-options img {
+    height: 35px;
+    padding-left: 2rem;
+}
+
 .announcement {
     padding: 1rem 0;
     border-bottom: 1px solid #8a8a8a;
@@ -204,7 +228,6 @@ h2 {
 .announcement p {
     padding: 0 .25rem;
     font-size: .75rem;
-    color: #424242;
 }
 
 .trending-profile:nth-last-child(n+2) {
@@ -213,8 +236,4 @@ h2 {
 
 .trending-profile h4 {
     font-weight: 500;
-}
-
-.trending-profile p {
-    color: #424242;
 }
