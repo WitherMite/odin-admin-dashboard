@@ -138,7 +138,7 @@ input[type="search"] {
     border-radius: 32px;
 }
 
-/* Cards */
+/* Cards (Redo grid/flex flow) */
 
 main {
     padding: 1.5rem;
@@ -155,7 +155,6 @@ main {
 
 .info-container {
     flex: 1;
-    min-width: 200px;
     display: grid;
     grid-template-rows: auto 1fr;
     gap: 1rem;
@@ -168,12 +167,9 @@ h2 {
 
 .project-container{
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+    grid-template-columns: repeat(auto-fit, 450px);
     gap: 1rem;
-}
-
-.card-container {
-    min-height: 200px;
+    place-items: center;
 }
 
 .card {
@@ -204,6 +200,10 @@ h2 {
 .project-options img {
     height: 35px;
     padding-left: 2rem;
+}
+
+.announcements {
+    margin-bottom: 1rem;
 }
 
 .announcement {
