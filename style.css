@@ -100,9 +100,16 @@ input[type="search"] {
     justify-self: stretch;
     appearance: none;
     height: 1.5rem;
+    padding: 0 1ch 0 1.5ch;
     background-color: rgb(230, 230, 230);
+    font-family: inherit;
+    font-size: 1rem;
     border: none;
     border-radius: 32px;
+}
+
+input[type="search"]:focus {
+    outline: solid 2.5px rgb(78, 170, 245);
 }
 
 .welcome-msg,
