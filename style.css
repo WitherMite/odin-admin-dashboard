@@ -132,11 +132,12 @@ input[type="search"] {
 
 .header-bottom button {
     align-self: end;
-    width: 75px;
-    padding: .5rem .1rem;
+    width: 100px;
+    padding: .75rem 1.5rem;
     margin: .5rem 0 .5rem 1rem;
     color: #ffffff;
     background-color: rgb(78, 170, 245);
+    font-size: 1rem;
     font-weight: 600;
     border: none;
     border-radius: 32px;
