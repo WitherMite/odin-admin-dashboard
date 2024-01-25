@@ -117,8 +117,8 @@ input[type="search"]:focus {
     justify-self: start;
     display: grid;
     grid-template-columns: auto 1fr;
-    grid-template-rows: 1fr 1fr;
-    place-items: end start;
+    grid-template-rows: auto 1fr;
+    place-items: center start;
     column-gap: 1rem;
 }
 
@@ -134,7 +134,6 @@ input[type="search"]:focus {
 }
 
 .welcome-msg h1 {
-    margin-bottom: .5rem;
     font-size: 1.5rem;
 }
 
