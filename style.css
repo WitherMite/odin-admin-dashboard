@@ -143,7 +143,7 @@ input[type="search"] {
     border-radius: 32px;
 }
 
-/* Cards (Redo grid/flex flow) */
+/* Cards */
 
 main {
     padding: 1.5rem;
@@ -162,34 +162,43 @@ main {
     flex: 1;
     display: grid;
     grid-template-rows: auto 1fr;
-    gap: 1rem;
+    gap: 1.75rem;
+    place-content: center;
 }
 
 h2 {
-    margin-bottom: .75rem;
+    margin-bottom: 1rem;
     font-size: 1.25rem;
 }
 
 .project-container{
+    margin-bottom: .75rem;
     display: grid;
     grid-template-columns: repeat(auto-fit, 450px);
     gap: 1rem;
-    place-items: center;
+    place-content: center;
+}
+
+.project-container > h2{
+    margin: 0;
+    grid-column: 1 / -1;
+    align-self: start;
 }
 
 .card {
     padding: 2rem;
     max-width: 450px;
+    min-width: 273px;
     border-radius: 10px;
     background-color: #ffffff;
     box-shadow: 4px 4px 10px 0px #8f8f8f;
 }
 
 .project-card {
-    position: relative;
     height: 225px;
     width: 450px;
     border-left: 10px solid rgb(255, 196, 0);
+    display: grid;
 }
 
 .project-card p,
@@ -199,18 +208,12 @@ h2 {
 }
 
 .project-options {
-    position: absolute;
-    bottom: 2rem;
-    right: 2rem;
+    place-self: end;
 }
 
 .project-options img {
     height: 35px;
     padding-left: 2rem;
-}
-
-.announcements {
-    margin-bottom: 1rem;
 }
 
 .announcement {
